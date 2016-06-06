@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvPD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Bike lights available for pairing:"
+        android:textColor="@color/Green"
+        android:textSize="20sp" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPD"
+        android:layout_below="@+id/tvPD" >
+    </ListView>
+    
+    <!--
+    <ListView
+        android:id="@+id/fileListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPD"
+        android:layout_alignParentTop="true" >
+    </ListView>
+    -->
+
+    <ListView
+        android:id="@+id/fileListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+         />
+    <!-- android:listSelector="@drawable/list_selector" -->
+
+    <Button
+        android:id="@+id/bRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/listView"
+        android:text="Refresh" />
+
+</RelativeLayout>
